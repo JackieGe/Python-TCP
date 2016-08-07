@@ -1,0 +1,5 @@
+1. start the server. Open the command line and cd to the directory where the tsTserv.py exits, type 'python tsTserv.py'
+2. run the client. Open the command line and cd to the same directory (where the tsTclnt.py exits), and type 'python tsTclnt.py'
+   type in something in the client side command and see what happens
+
+NOTE: this require python 2.6 or above. not work with Python 3.x
