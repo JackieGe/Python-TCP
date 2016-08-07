@@ -6,7 +6,7 @@ PORT = 21567
 BUFSIZ = 1024
 ADDR = (HOST, PORT)
 
-tcpSerSock = socket(AF_INET, SOCK_STREAM)
+tcpSerSock = socket(AF_INET6, SOCK_STREAM)
 tcpSerSock.bind(ADDR)
 tcpSerSock.listen(5)
 
