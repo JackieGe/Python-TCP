@@ -3,3 +3,4 @@
    type in something in the client side command and see what happens
 
 NOTE: this require python 2.6 or above. not work with Python 3.x
+test sync
