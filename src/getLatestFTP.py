@@ -2,8 +2,8 @@ import ftplib
 import os
 import socket
 
-HOST = 'ftp.objectivasoftware.com'
-DIRN = 'ftp.objectivasoftware.com/Training'
+HOST = ''
+DIRN = ''
 FILE = 'bugzilla-LATEST.tar.gz'
 
 def main():
@@ -15,7 +15,7 @@ def main():
     print '*** Connected to host "%s"' % HOST
 
     try:
-        f.login("ftpuser1","write.o7a@bj")
+        f.login("user","passwd")
         f.dir()
     except ftplib.error_perm:
         print 'Error: cannot login successfully'
@@ -24,9 +24,9 @@ def main():
     print '*** Logged in successfully'
 
     try:
-        f.cwd("For Jackie")
+        f.cwd("")
         f.retrlines("LIST")
-        f.retrbinary('RETR Ims_8_TTXT.zip', open('Ims_8_TTXT.zip','wb').write)
+        f.retrbinary('RETR filename', open('filename','wb').write)
     except ftplib.error_perm:
         f.quit();
         return
