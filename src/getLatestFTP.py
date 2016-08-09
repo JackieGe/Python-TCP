@@ -23,6 +23,13 @@ def main():
         return
     print '*** Logged in successfully'
 
+    try:
+        f.cwd("For Jackie")
+        f.retrlines("LIST")
+        f.retrbinary('RETR Ims_8_TTXT.zip', open('Ims_8_TTXT.zip','wb').write)
+    except ftplib.error_perm:
+        f.quit();
+        return
     # try:
     #     f.cwd(DIRN)
     # except ftplib.error_perm:
