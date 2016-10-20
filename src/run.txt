@@ -4,3 +4,38 @@
 
 NOTE: this require python 2.6 or above. not work with Python 3.x
 test sync
+
+
+
+how to install psycopg2 (a postgresql connector) for python
+for mac
+1. install xcode via app store
+2. go to https://pypi.python.org/pypi/psycopg2/2.6.2#downloads (this is for install through source code)
+   download psycopg2-2.6.2.tar.gz
+   uncompress with command:
+   tar zxvf psycopg2-2.6.2.tar.gz
+   cd the folder and run:
+        export PATH=~/PostgreSQL/pg95/bin:$PATH (note: change to your actual folder which contains pg_config)
+        echo $PATH (test the new value, note this value is a temp change and it is only valid for current terminal window.
+                    if you want to change it permanently, you should go to /etc/paths file and change add the path as a line)
+        python setup.py build
+        sudo python setup.py install
+    
+
+3. install easy_install and pip
+   sudo easy_install psycopg2
+   or
+
+   sudo easy_install pip
+   sudo pip install psycopg2
+
+   在中国大陆估计需要链接VPN
+
+how to install mariadb on mac
+follow steps from https://mariadb.com/blog/installing-mariadb-10010-mac-os-x-homebrew
+
+how to install mysql connector for python
+follows steps from https://mariadb.com/blog/how-connect-python-programs-mariadb
+
+how to install mac ports: https://www.macports.org/install.php
+(need VPN inside Mainland)
